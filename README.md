@@ -10,3 +10,8 @@ Note: Login with the same id on which the folder is present on drive.
 
 ## Step 2: 
 Open Windows Terminal (or CMD) in the same directory as the script and type : `python G_Drive_Folder_Download.py`
+
+## Screenshots:
+
+![InkedG drive download](https://user-images.githubusercontent.com/71930390/183724620-cea8939d-5ccb-41cf-9b37-ed9bf4b18df2.jpg)
+

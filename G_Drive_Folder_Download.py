@@ -176,7 +176,6 @@ def downloadFile(file_id, path, size):
         try:
             status, done = downloader.next_chunk()
             p2 = progressPercentage(status.progress())
-            # for x in track(range(p1,p2), description=""):
             for x in range(p1,p2):
                 sleep(0.005)
                 bar.next()
@@ -259,17 +258,14 @@ def main():
         print(f"{COLORS['Yellow']}\n-Folder (with subfolders and files) Will be Downloaded to the Current Directory.")
     else:
         print(f"{COLORS['Yellow']}\n-Folder (with subfolders and files) Will be Downloaded to: {path}")
-    # print_color("-Note: To stop the download open ['Task Manager'(Windows)/'System Monitor'(Linux)] and ['End Task'/'Stop'] 'python' or 'python3'.", 'Red')
     print(f"-Note: To stop the download open ['Task Manager'(Windows)/'System Monitor'(Linux)] and")
     print(f"['End Task'/'Stop'] 'python' or 'python3'.{COLORS['Reset']}")
     key = input(f"-Press 'y' to Continue OR 'n' to Quit. {COLORS['Cyan']}")
-    # key = input(" Enter: ")
     if key == "y":
         if not os.path.isdir(path):
             os.makedirs(path)
         parentDownloadDirectory = path
         try:
-            # os.system('cls||clear');
             print(COLORS['Green'], "\n**********************************************************************************************\n*                                      Download Startig                                      *\n**********************************************************************************************\n",COLORS['Reset'])
             for x,id in zip(range(0,noOfDownloads),idList):
                 os.chdir(parentDownloadDirectory)
@@ -286,16 +282,4 @@ def main():
         exit()
 
 
-main()     
-
-#https://drive.google.com/drive/folders/197dYJHyL95ebF_gXXU1I1U-AiTlNB4GK
-
-
-
-# 1SU1TuWHbThPI-B7AhyYpP-I_xjgb3DsC
-
-# print("[                       Google Drive Folder Download Without Zip                             ]")
-# print("[##########################Google Drive Folder Download Without Zip##########################]")
-# print("|#############################[Downloading parent folder 1 of 1]#############################|")
-# print("|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾|")
-# print("|____________________________________________________________________________________________|")
+main()    

@@ -1,7 +1,7 @@
 #  Google-Drive-Folder-Download-Without-Zip
 
 ## Step 1:
-Download your client_secret.json file. To get this file follow [this][link1] video. Place this file (rename the file to 'client_secret.json') in same directory as this script.
+Download your client_secret.json file. To get this file follow [this][link1] video. Place this file (rename the file to 'client_secret.json') in same directory as this script.<br />
 Note: Login with the same id on which the folder is present on drive.
  [Channel Credits][link2]
 
@@ -12,7 +12,7 @@ Note: Login with the same id on which the folder is present on drive.
 Open Windows Terminal (or CMD) in the same directory as the script and type : `python G_Drive_Folder_Download.py`
 
 ## Step 3: 
-Paste the folder ID(s) when prompted.
+Paste the folder ID(s) when prompted. <br />
 Note: Folder ID of a folder on drive is the last part of the url when that folder is open. [This][link3] article shows how to get Folder ID. 
 [link3]: <https://robindirksen.com/blog/where-do-i-get-google-drive-folder-id#:~:text=the%20needed%20object.-,Get%20the%20Folder%20ID,%2F%7Bfolder%2Did%7D%22.>
 

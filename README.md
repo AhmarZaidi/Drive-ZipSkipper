@@ -14,7 +14,8 @@ Open Windows Terminal (or CMD) in the same directory as the script and type : `p
 ## Step 3: 
 Paste the folder ID(s) when prompted. <br />
 Note: Folder ID of a folder on drive is the last part of the url when that folder is open. [This][link3] article shows how to get Folder ID. 
-[link3]: <https://robindirksen.com/blog/where-do-i-get-google-drive-folder-id#:~:text=the%20needed%20object.-,Get%20the%20Folder%20ID,%2F%7Bfolder%2Did%7D%22.>
+
+[link3]: <https://robindirksen.com/blog/where-do-i-get-google-drive-folder-id>
 
 ## Screenshots:
 

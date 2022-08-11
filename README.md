@@ -11,6 +11,11 @@ Note: Login with the same id on which the folder is present on drive.
 ## Step 2: 
 Open Windows Terminal (or CMD) in the same directory as the script and type : `python G_Drive_Folder_Download.py`
 
+## Step 3: 
+Paste the folder ID(s) when prompted.
+Note: Folder ID of a folder on drive is the last part of the url when that folder is open. [This][link3] article shows how to get Folder ID. 
+[link3]: <https://robindirksen.com/blog/where-do-i-get-google-drive-folder-id#:~:text=the%20needed%20object.-,Get%20the%20Folder%20ID,%2F%7Bfolder%2Did%7D%22.>
+
 ## Screenshots:
 
 ![InkedG drive download](https://user-images.githubusercontent.com/71930390/183724620-cea8939d-5ccb-41cf-9b37-ed9bf4b18df2.jpg)

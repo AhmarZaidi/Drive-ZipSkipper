@@ -1,26 +1,25 @@
-#  Google-Drive-Folder-Download-Without-Zip
+# Los-Angeles-Subway-Network
 
-## Step 1:
-Download your client_secret.json file. To get this file follow [this][link1] video. Place this file (rename the file to 'client_secret.json') in same directory as this script.<br />
-Note: Login with the same id on which the folder is present on drive.
- [Channel Credits][link2]
+## This was task 3 for the Bitnine Apache AGE Internship. 
 
-[link1]: <https://www.youtube.com/watch?v=6bzzpda63H0>
-[link2]: <https://www.youtube.com/channel/UCvVZ19DRSLIC2-RUOeWx8ug>
+## Question: Use any map api to draw the Los Angeles’ subway network.
 
-## Step 2: 
-Open Windows Terminal (or CMD) in the same directory as the script and type : `python G_Drive_Folder_Download.py`
+## Solution: Fetched the Los Angeles Subway Station data using geohub [lacity][link1] api and the route data using the [metro.net][link2] project files hosted at [gtfs_rail][link3] and used it to create Object in Javascript. Then used this object for drawing map markers using [tomtom][link4] api.
 
-## Step 3: 
-Paste the folder ID(s) when prompted. <br />
-Note: Folder ID of a folder on drive is the last part of the url when that folder is open. The yellow highlighted part in the image below. 
-![image](https://user-images.githubusercontent.com/71930390/184150619-ff0cdb42-cc8f-4f21-b514-7699f18a2d0f.png)
 
-[This][link3] article shows how to get Folder ID. 
+## Development Environment:
+Text Editor: Microsoft Visual Studio Code<br />
+Browser: Mozilla Firefox v105.0(64-bit) with Developer Tools for Debugging<br />
+Maps API: [tomtom][link4]<br />
+Los Angeles Subway Stations Information API: [lacity][link1]<br />
+Los Angeles Subway Network Route Data: [metro.net][link2], [gtfs_rail][link3] <br />
 
-[link3]: <https://robindirksen.com/blog/where-do-i-get-google-drive-folder-id>
+
+[link1]: <https://geohub.lacity.org/datasets/lahub::metro-rail-lines-stops/about>
+[link2]: <https://www.metro.net/riding/schedules/>
+[link3]: <https://gitlab.com/LACMTA/gtfs_rail>
+[link4]: <https://developer.tomtom.com/map-display-api/>
+
 
 ## Screenshots:
-
-![InkedG drive download](https://user-images.githubusercontent.com/71930390/183724620-cea8939d-5ccb-41cf-9b37-ed9bf4b18df2.jpg)
-
+![image](https://user-images.githubusercontent.com/71930390/200404890-a3e7553c-59a2-4dcf-94df-14a70d9553fd.png)

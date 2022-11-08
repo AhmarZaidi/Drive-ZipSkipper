@@ -1,5 +1,11 @@
 #  Google-Drive-Folder-Download-Without-Zip
 
+# Why:
+Whenever we need to download a folder from google drive, google first creates a zip of the folder on its backend and then downloads that zip file. Moreover if the folder size is more than 2 GB multiple zips are created that are parallelly downloaded. This creates a problem for users who are downloading some folder because it takes some extra time to zip the files and sometimes parallel downloading fails.
+The idea is to use Google Drive API from the Google Cloud Console and download the folder and all the subfolders and files in that folder sequentially without zipping by using the folder ID and client_secret.json for authentication.
+
+# How To Use:
+
 ## Step 1:
 Download your client_secret.json file. To get this file follow [this][link1] video. Place this file (rename the file to 'client_secret.json') in same directory as this script.<br />
 Note: Login with the same id on which the folder is present on drive.

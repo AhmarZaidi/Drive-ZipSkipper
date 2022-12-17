@@ -6,7 +6,7 @@ import io
 import socket
 from time import sleep
 import traceback
-from progress.bar import IncrementalBar
+from progress.bar import Bar
 from googleapiclient.http import MediaIoBaseDownload
 from datetime import datetime as dt
 
@@ -70,7 +70,7 @@ def downloadFile(file_id, path, size):
     done = False
     bar = None
     p1 = p2 = 0
-    bar = IncrementalBar(max=100, suffix='%(percent)d%%')
+    bar = Bar(max=100, fill='▇', suffix='%(percent)d%%')
     print(f"\n[{currentFileNumber}/{totalNumberOfFiles}]", " Downloading:",service.files().get(fileId=file_id, supportsAllDrives=True).execute()['name'], sizeScaler(size))
     while not done:
         try:

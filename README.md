@@ -1,4 +1,4 @@
-#  Google-Drive-Folder-Download-Without-Zip
+# Drive-ZipSkipper: Google Drive Folder Download Without Zip
 
 # Why:
 Whenever we need to download a folder from google drive, google first creates a zip of the folder on its backend and then downloads that zip file. Moreover if the folder size is more than 2 GB multiple zips are created that are parallelly downloaded. This creates a problem for users who are downloading some folder because it takes some extra time to zip the files and sometimes parallel downloading fails.
